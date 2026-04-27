@@ -1,0 +1,16 @@
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/admin/api/AdminController.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/security/MethodSecurityConfig.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/dealer/dto/DealerDto.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/vehicle/application/VehicleService.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/exception/Exceptions.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/exception/GlobalExceptionHandler.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/InventoryApplication.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/dealer/application/DealerService.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/vehicle/api/VehicleController.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/dealer/domain/Dealer.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/context/TenantContext.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/security/TenantFilter.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/security/SecurityConfig.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/dealer/api/DealerController.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/vehicle/domain/Vehicle.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/vehicle/dto/VehicleDto.java
