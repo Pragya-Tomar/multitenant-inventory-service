@@ -3,7 +3,6 @@ package com.inventory.inventory.dealer.api;
 import com.inventory.inventory.dealer.application.DealerService;
 import com.inventory.inventory.dealer.dto.DealerDto.*;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -15,16 +14,17 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/dealers")
-@RequiredArgsConstructor
 public class DealerController {
 
     private final DealerService dealerService;
 
+    public DealerController(DealerService dealerService) {
+        this.dealerService = dealerService;
+    }
+
     @PostMapping
-    public ResponseEntity<DealerResponse> createDealer(
-            @Valid @RequestBody CreateDealerRequest request) {
-        return ResponseEntity.status(HttpStatus.CREATED)
-                .body(dealerService.createDealer(request));
+    public ResponseEntity<DealerResponse> createDealer(@Valid @RequestBody CreateDealerRequest request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(dealerService.createDealer(request));
     }
 
     @GetMapping("/{id}")
@@ -39,8 +39,7 @@ public class DealerController {
     }
 
     @PatchMapping("/{id}")
-    public ResponseEntity<DealerResponse> updateDealer(
-            @PathVariable UUID id,
+    public ResponseEntity<DealerResponse> updateDealer(@PathVariable UUID id,
             @RequestBody UpdateDealerRequest request) {
         return ResponseEntity.ok(dealerService.updateDealer(id, request));
     }

@@ -1,3 +1,5 @@
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/dealer/repository/DealerRepository.java
+/workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/vehicle/repository/VehicleRepository.java
 /workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/admin/api/AdminController.java
 /workspaces/multitenant-inventory-service/src/main/java/com/inventory/shared/security/MethodSecurityConfig.java
 /workspaces/multitenant-inventory-service/src/main/java/com/inventory/inventory/dealer/dto/DealerDto.java
